@@ -25,6 +25,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    align-content: center;
+    display: grid;
 }
 
 a {
@@ -56,21 +58,22 @@ li {
     text-align: center;
     border-bottom: 1px solid white;
     border-top: 1px solid white;
-    width: 40vw;
+    width: 700px;
     padding: 2vh 0 5vh 0;
-    margin: auto;
-    margin-top: 200px;
+    margin: 5vh auto 0 auto;
 }
 
 .navigation {
-    position: relative;
+    top: 50%;
+    position: absolute;
+    width: 800px;
     text-align: center;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Sofia;
     letter-spacing: -.02em;
     font-size: 30px;
-    margin-top: 50px;
+    margin-bottom: 5vh;
 }
 
 #name-header {
@@ -88,17 +91,14 @@ li {
 }
 
 #avatar {
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 125px;
     height: 125px;
+    margin: 5vh auto;
     border-radius: 50%;
     border: 2px solid white;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 70px;
-    padding-top: 18px;
     color: white;
     text-shadow: 0 5px 5px black;
     transition: 1s ease-in-out;
