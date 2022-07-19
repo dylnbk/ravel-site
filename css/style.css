@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+@font-face {
+    font-family: Sofia;
+    src: url('/fonts/Sofia-Regular.ttf');
+    font-weight: bold;
+    font-display: swap;
+    } 
+    
+@font-face {
+    font-family: JosefinSlab;
+    src: url('/fonts/JosefinSlab-VariableFont_wght.ttf');
+    font-weight: bold;
+    font-display: swap;
+    }
+    
+body {
+    background-image: url("/media/background.jpeg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s ease-in-out; 
+}
+
+a:hover {
+    color: #000000;
+    text-shadow: 0 5px 5px black;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+li {
+    padding: 5px 25px;
+    display: inline;
+    margin: 0 20px;
+}
+
+.main-container {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    width: 40vw;
+    padding: 2vh 0 5vh 0;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.navigation {
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Sofia;
+    letter-spacing: -.02em;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+#name-header {
+    display: inline;
+    font-family: Sofia;
+    letter-spacing: -.02em;
+    font-size: 80px;
+    color: #ffffff;
+    transition: 1s ease-in-out;
+    text-shadow: 0 5px 5px black;
+}
+
+#name-header:hover {
+    color: #815221;
+}
+
+#avatar {
+    position: absolute;
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 2px solid white;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    padding-top: 18px;
+    color: white;
+    text-shadow: 0 5px 5px black;
+    transition: 1s ease-in-out;
+}
+
+#avatar:hover {
+    text-shadow: 0 0 5px black;
+    color: #000000;
+    background-color: white;
+}
+
+#bio {
+    padding: 0 5vw 0 5vw;
+    color: white;
+    font-family: JosefinSlab;
+    font-size: 25px;
+    text-shadow: 0 5px 5px black;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.752);
+    bottom: 5px;
+    position: absolute;
+
+ }
+
+textarea {
+    font-family: JosefinSlab;
+    font-size: larger;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid white;
+    color: #ffffff;
+    width: 500px;
+    height: 100px;
+    margin: 50px 0px;
+}
+
+input {
+    font-family: JosefinSlab;
+    font-size: larger;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid white;
+    color: #ffffff;
+    width: 500px;
+    margin-top: 25px;
+    padding-top: 15px;
+}
+
+button {
+    background-color: transparent;
+    font-size: larger;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 0 5px 5px black;
+    transition: 1s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+    background-color: white;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+
+.underline {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.54);
+    padding: 5px 25px;
+    transition: 1s ease-in-out;
+}
+
+.underline:hover {
+    background-color: rgb(255, 255, 255);
+}
