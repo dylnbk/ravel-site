@@ -23,9 +23,16 @@ body {
     background-color: black;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     height: 100vh;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 a {
     text-decoration: none;
@@ -33,6 +40,7 @@ a {
     transition: 1s ease-in-out; 
     display: inline-block;     
     position: relative;    
+    margin-top: 20px;
     z-index: 1;     
     padding: 1em;     
     margin: -1em; 
@@ -40,7 +48,7 @@ a {
 
 a:hover {
     color: #000000;
-    text-shadow: 0 5px 5px black;
+    text-shadow: 0 2px 5px black;
     cursor: pointer;
 }
 
@@ -72,7 +80,7 @@ li {
     display: inline;
     font-family: Sofia;
     letter-spacing: -.02em;
-    font-size: 80px;
+    font-size: 5rem;
     color: #ffffff;
     transition: 1s ease-in-out;
     text-shadow: 0 5px 5px black;
@@ -87,7 +95,7 @@ li {
     text-align: center;
     width: 125px;
     height: 125px;
-    margin: 5vh auto 3vh auto;
+    margin: 5vh auto 5vh auto;
     padding-top: 20px;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.4);
@@ -116,7 +124,7 @@ li {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     width: 800px;
     padding: 2vh 0 5vh 0;
-    margin: 5vh auto 0 auto;
+    margin: 5vh auto 5vh auto;
 }
 
 ::placeholder {
@@ -178,4 +186,41 @@ button:hover {
 
 .underline:hover {
     background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 900px) {
+
+    #content {
+        width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    #content {
+        width: 200px;
+    }
+
+    #name-header {
+        font-size: 3rem;
+    }
+
+    #bio {
+        font-size: 1.2rem;
+    }
+
+    .navigation a {
+        padding: 15px;
+        margin: 0px 5px;
+    }
+
+    textarea {
+        width: 200px;
+    }
+    
+    input {
+        width: 200px;
+    }
+
 }
